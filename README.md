@@ -23,4 +23,4 @@ arm：arm架构
 csc /t:winexe /res:mainJar.jar /platform:anycpu /win32icon:icon.ico /out:Main.exe Program.cs
 ```
 部分配置可以用文本编辑器打开Program.cs进行修改，例如程序类型（控制台或者窗口）、java路径、找不到java运行环境的提示信息等等，其中在源文件中都有注释说明“可修改”。<br>
-> 最后更新：2021.2.8
+> 最后更新：2021.2.9
