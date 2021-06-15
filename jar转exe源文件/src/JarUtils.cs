@@ -99,8 +99,8 @@ namespace JarToExeByCS
 		public static void RunCmdUseSystemCmd(string commandArgs)
 		{
 			Process process = new Process();
-			process.StartInfo.FileName = javaPath;
-			process.StartInfo.Arguments = commandArgs;
+			process.StartInfo.FileName = "cmd";
+			process.StartInfo.Arguments = "/c " + javaPath + " " + commandArgs;
 			process.StartInfo.UseShellExecute = true;
 			process.Start();
 			process.WaitForExit();

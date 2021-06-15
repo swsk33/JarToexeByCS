@@ -56,6 +56,10 @@ namespace JarToExeBuilder
 			}
 			string jarFilePath = args[jarFileOption + 1];
 			string outputPath = args[outputFileOption + 1];
+			if (!outputPath.EndsWith(".exe"))
+			{
+				outputPath = outputPath + ".exe";
+			}
 			string commandArgs = "/t:winexe /res:\"" + jarFilePath + "\",jar /res:\"cfg.properties\",cfg /out:\"" + outputPath + "\"";
 			int platformOption = Array.IndexOf(args, "-p");
 			int iconOption = Array.IndexOf(args, "-i");
