@@ -4,7 +4,7 @@
 ### 使用说明
 #### 1，环境配置
 先将系统自带的C#编译器(csc.exe)所在目录添加到Path系统环境变量里面：<br>
-此电脑-右键-属性-高级系统设置-环境变量，在系统变量里打开Path变量，把路径```C:\Windows\Microsoft.NET\Framework\v4.0.30319```加进去。然后打开命令行即可调用```csc```命令。<br>
+此电脑-右键-属性-高级系统设置-环境变量，在系统变量里打开Path变量，把路径```C:\Windows\Microsoft.NET\Framework\v4.0.30319```加进去。然后打开命令行/cmd输入```csc```命令，如果有输出说明配置成功。<br>
 #### 2，下载发行版并解压
 [下载](https://gitee.com/swsk33/jarToexeByCS/releases)右边发行版/Release中的"j2ecs-x.x.x.7z"（x表示版本号，下载最新版即可）并解压。<br>
 #### 3，按需修改配置文件
