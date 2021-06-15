@@ -1,0 +1,2 @@
+这个是构建程序生成目录，需要使用命令行调用exe。
+生成的“buildexe.exe”文件需要和“jar转exe源文件”文件夹中的“src”、“cfg.properties”和“app.manifest”放在一个目录才能正常工作（因此你也可以把“buildexe.exe”扔到“jar转exe源文件”文件夹中）。
