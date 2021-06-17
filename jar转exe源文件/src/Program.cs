@@ -19,7 +19,7 @@ namespace JarToExeByCS
 			string[] cfgContents = File.ReadAllLines(JarUtils.CFG_PATH, Encoding.UTF8);
 			foreach (string value in cfgContents)
 			{
-				if (value.StartsWith("#") || !value.Contains("="))
+				if (value.Trim().StartsWith("#") || !value.Contains("="))
 				{
 					continue;
 				}
