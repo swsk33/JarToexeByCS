@@ -48,7 +48,7 @@ namespace JarToExeBuilder
 		{
 			int jarFileOption = Array.IndexOf(args, "-j");
 			int outputFileOption = Array.IndexOf(args, "-o");
-			if (jarFileOption == -1 || outputFileOption == -1)
+			if (jarFileOption == -1 || jarFileOption == args.Length - 1 || outputFileOption == -1 || outputFileOption == args.Length - 1)
 			{
 				Console.WriteLine("参数错误！");
 				printHelp();
