@@ -66,10 +66,20 @@ namespace JarToExeBuilder
 			int authOption = Array.IndexOf(args, "-a");
 			if (platformOption != -1)
 			{
+				if (platformOption == args.Length - 1)
+				{
+					Console.WriteLine("请给架构(-p)指定参数值或者不使用-p选项！");
+					return;
+				}
 				commandArgs = commandArgs + " /platform:" + args[platformOption + 1];
 			}
 			if (iconOption != -1)
 			{
+				if (iconOption == args.Length - 1)
+				{
+					Console.WriteLine("请给图标(-i)指定参数值或者不使用-i选项！");
+					return;
+				}
 				commandArgs = commandArgs + " /win32icon:\"" + args[iconOption + 1] + "\"";
 			}
 			if (authOption != -1)
