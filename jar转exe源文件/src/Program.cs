@@ -25,7 +25,7 @@ namespace JarToExeByCS
 				}
 				string key = value.Substring(0, value.IndexOf("=")).Trim();
 				string val = "";
-				if (!key.EndsWith("="))
+				if (!value.Trim().EndsWith("="))
 				{
 					val = value.Substring(value.IndexOf("=") + 1).Trim();
 				}
