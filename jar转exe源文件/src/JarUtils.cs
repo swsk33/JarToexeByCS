@@ -11,7 +11,7 @@ namespace JarToExeByCS
 		/// <summary>
 		/// 临时目录
 		/// </summary>
-		public static readonly string TMP_PATH = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\Temp\\" + "_jar" + GetDateTime();
+		public static readonly string TMP_PATH = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData) + "\\Temp\\" + "jar_" + GetDateTime();
 
 		/// <summary>
 		/// jar文件位置

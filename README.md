@@ -45,4 +45,4 @@ buildexe -j "E:\中转\a.jar" -o "C:\Users\%username%\Downloads\main.exe" -i "C:
 ```
 buildexe -j "E:\中转\a.jar" -o "C:\Users\%username%\Downloads\main.exe" -a
 ```
-> 最后更新：2021.6.17
+> 最后更新：2021.6.18
